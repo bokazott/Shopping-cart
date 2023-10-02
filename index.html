@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pijaca</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>Shopping Cart</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Products</h2>
+
+			<div class="single-item">
+				<img class="tuborg-beer" src="tuborg.png">
+				<div class="si-content">
+					<h3>Tuborg</h3>
+					<p class="price">$20</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img class="budwieser-beer" src="budwieser.png">
+				<div class="si-content">
+					<h3>Budweiser</h3>
+					<p class="price">$18</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img class="heineken-beer" src="heineken.png">
+				<div class="si-content">
+					<h3>Heineken</h3>
+					<p class="price">$25</p>
+				</div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<h2>Cart</h2>
+			
+			<div class="cart-items"></div>
+
+			<div class="total"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
